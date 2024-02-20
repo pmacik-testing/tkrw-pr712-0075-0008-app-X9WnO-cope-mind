@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dfbs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0008-tenant/tkrw-pr712-0075-0008-app/devfile-sample-dfbs@sha256:c29f2ec7b5c48df78e3f3bfb19c4eb84fe506246ca107e4170d3187bb7d91e34
+        name: my-nodejs
+        resources: {}
+status: {}
